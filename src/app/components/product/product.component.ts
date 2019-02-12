@@ -1,16 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../entities/product.entity';
-import { ProductService } from '../services/product.service';
 
+import { Product } from '../../entities/product.entity';
+import { ProductService } from '../../services/product.service';
 
 @Component({
-	templateUrl: 'product.component.html'
+	templateUrl: 'index.component.html'
 })
 
 export class ProductComponent implements OnInit {
 
 	private products: Product[];
-  private name;
 
 	constructor(
 		private productService: ProductService
